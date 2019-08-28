@@ -150,7 +150,7 @@ CORS 全称是跨域资源共享（Cross-Origin Resource Sharing），是一种 
           } 
       }).listen(8080)
     ```
-    - 启动终端，执行 node server.js              
+- 启动终端，执行 node server.js              
 ![启动服务器.PNG](https://upload-images.jianshu.io/upload_images/14422192-7cd736c68ff40530.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 - 浏览器打开[http://localhost:8080/index.html](http://localhost:8080/index.html) ,查看效果和网络请求
   ![localhost.PNG](https://upload-images.jianshu.io/upload_images/14422192-3f1307096458d4ad.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -160,7 +160,6 @@ CORS 全称是跨域资源共享（Cross-Origin Resource Sharing），是一种 
 - 若将 `res.setHeader('Access-Control-Allow-Origin','127.0.0.1:8080')`
 改成 `res.setHeader('Access-Control-Allow-Origin','*')`，打开服务器，浏览器打开[http://localhost:8080/index.html](http://localhost:8080/index.html),浏览器页能正常响应。`*`表示匹配所有的窗口
  ![ok2.PNG](https://upload-images.jianshu.io/upload_images/14422192-0a17caf43ecbd312.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
 
 以上为简单为跨域简单总结
 
